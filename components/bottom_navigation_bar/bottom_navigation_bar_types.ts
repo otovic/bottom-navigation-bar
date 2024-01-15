@@ -5,11 +5,12 @@ export type BottomNavBarProps = {
         borderTopColor?: string,
         borderTopWidth?: number,
     },
-    navigation: any,
+    navigation?: any,
     iconStyle?: iconStyle,
     selectedIconStyle?: SelectedIconStyle,
     defaultSelectedIndex?: number,
-    actions: Array<BottomNavBarAction>,
+    actions?: Array<BottomNavBarAction>,
+    content?: React.FC | Element,
 }
 
 export type BottomNavBarAction = {
